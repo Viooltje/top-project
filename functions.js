@@ -1,7 +1,9 @@
+// Testing the functions 
 add7(7);
 multiply(5, 2);
 lastLetter("abcd");
 capitalize("HEEEY how aRe you");
+capitalize("nO, it's Not neEded")
 
 
 function add7(number) {
@@ -13,15 +15,9 @@ function multiply(number1, number2) {
 }
 
 function capitalize(string) {
-    let newstr = "";
-    for (var i = 0; i < string.length; i++) {
-        if (i = 0) {
-            newstr += string[i].toUpperCase;
-        } else {
-            newstr += string[i].toLowerCase;
-        }
-        console.log(newstr);
-    }
+    let firstChar = string[0].toUpperCase();
+    let restStr = string.substring(1, string.length).toLowerCase();
+    console.log(firstChar + restStr);
     
 }
 
